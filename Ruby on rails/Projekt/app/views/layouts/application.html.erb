@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projekt</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<div class="container" >
+  <nav>
+    <div class="nav-wrapper blue darken-3">
+      <a href="index" class="brand-logo center"><img src="logo.png" height="70px">
+      </a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="https://www.instagram.com/orzemek/">Instagram<img src="/assets/insta.png" class="responsive-img" width="40px"></a></li>
+        <li><a href="">Facebook<img src="/assets/fb.png" class="responsive-img" width="40px"></a></li>
+      </ul>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="">Twitter<img src="/assets/twitter.png" class="responsive-img" width="40px"> </a></li>
+        <li><a href="">Snapchat<img src="/assets/snap.png" class="responsive-img" width="40px"></a></li>
+      </ul>
+    </div>
+    </nav>
+
+
+  <div class="middle">
+    <%= yield %>
+  </div>
+  <nav>
+    <footer class="page-footer blue darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        © 2k16 Copyright By Pszemke
+      </div>
+    </div>
+  </footer>
+  </nav>
+
+
+
+</div>
+
+</body>
+</html>
