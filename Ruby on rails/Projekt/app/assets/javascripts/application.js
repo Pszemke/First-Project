@@ -15,3 +15,11 @@
 //= require materialize-sprockets
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+    $('.materialboxed').materialbox();
+});
+
+$(document).ready(function(){
+    $('.slider').slider({full_width: true});
+});

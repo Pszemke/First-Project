@@ -21,3 +21,7 @@ body{
 .middle {
     min-height: 77vh;
 }
+.about
+{
+    float: right;
+}
